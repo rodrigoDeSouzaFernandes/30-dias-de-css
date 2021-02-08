@@ -34,7 +34,7 @@ main{
     font-size: 12em;
     line-height: 220px;
     overflow: hidden;
-    font-family: 'Titan One', cursive;
+    font-family: 'Titan One', Impact, arial, sans-serif;
     animation: text-animate 20s linear infinite;
 }
 

@@ -26,19 +26,19 @@ body {
 }
 
 .principal:hover .screen.camada5 {
-    transform:rotate3d(1, 0.5, -1, 70deg) translateY(-100px) translateX(100px);
+    transform:rotate3d(1, 0.5, -1, 70deg) translateY(-80px) translateX(100px);
     opacity: 1;
 }
 .principal:hover .screen.camada4 {
-    transform:rotate3d(1, 0.5, -1, 70deg) translateY(-75px) translateX(75px);
+    transform:rotate3d(1, 0.5, -1, 70deg) translateY(-60px) translateX(75px);
     opacity: 0.8;
 }
 .principal:hover .screen.camada3 {
-    transform:rotate3d(1, 0.5, -1, 70deg) translateY(-50px) translateX(50px);
+    transform:rotate3d(1, 0.5, -1, 70deg) translateY(-40px) translateX(50px);
     opacity: 0.6;
 }
 .principal:hover .screen.camada2 {
-    transform:rotate3d(1, 0.5, -1, 70deg) translateY(-25px) translateX(25px);
+    transform:rotate3d(1, 0.5, -1, 70deg) translateY(-20px) translateX(25px);
     opacity: 0.4;
 }
 .principal:hover .screen.camada1 {

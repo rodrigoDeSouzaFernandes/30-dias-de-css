@@ -21,8 +21,12 @@ main {
     position: absolute;
     color: white;
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 0;
     font-family: 'Titan One', cursive;
+}
+
+.btn:hover {
+    cursor: pointer;
 }
 
 .pulse {
