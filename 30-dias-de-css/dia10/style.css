@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+h1 {
+    font-size: 100px;
+    font-family: 'Press Start 2P', cursive;
+    border: 10px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color: yellow;
+    text-shadow: blue 5px 5px 5px;
+    box-shadow: blue 5px 5px 5px 10px;
+    animation: color 2s linear infinite;
+}
+
+span::before {
+    margin-left: 10px;
+    content: '🍕';
+    animation: icons 5s linear infinite;
+}
+
+@keyframes icons {
+    10% {content:  '⚽' ;}
+    20% {content: '🎮' ;}
+    30% {content: '🎸' ;}
+    40% {content: '🏋' ;}
+    50% {content: '🌊' ;}
+    60% {content: '🍔' ;}
+    70% {content: '🎧' ;}
+    80% {content: '📱' ;}
+    90% {content: '🖥' ;}
+}
+
+@keyframes color {
+    24% {
+        color: yellow;
+        text-shadow: blue 5px 5px 5px;
+        box-shadow:  blue 5px 5px 5px ;
+    }25% {
+        color: blue;
+        transform: rotate(2deg);
+    }49% {
+        color: blue;
+        text-shadow: red 5px 5px 5px;
+        box-shadow:  red 5px 5px 5px 10px;
+    }50% {
+        color: red;
+    }74% {
+        color: red;
+        text-shadow: green 5px 5px 5px;
+        box-shadow:  green 5px 5px 5px;
+    }75% {
+        color: green;
+        transform: rotate(-1deg);
+    }99% {
+        color: green;
+        text-shadow: yellow 5px 5px 5px;
+        box-shadow:  yellow 5px 5px 5px 10px;
+    }100% {
+        color: yellow;
+        text-shadow: blue 5px 5px 5px;
+        box-shadow:  blue 5px 5px 10px;
+    }
+}
