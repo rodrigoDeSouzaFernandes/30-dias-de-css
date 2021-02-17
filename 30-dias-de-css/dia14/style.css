@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black
+}
+
+
+h1 {
+    font-size: 100px;
+    font-size: 200px;
+    font-family: 'Ranchers', cursive;
+    background-image: url(download.jpeg);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: background-move 20s linear infinite;
+    letter-spacing: 10px;
+}
+
+@keyframes background-move {
+ from {
+     background-position: 0 , 0;
+ }
+ to {
+     background-position: 100%;
+     
+ }
+
+}

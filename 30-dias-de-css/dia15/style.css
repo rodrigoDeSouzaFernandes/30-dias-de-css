@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blueviolet;
+    text-shadow: 0 1px 0 #efefef,
+    0 2px 0 #efefef,
+    0 3px 0 #efefef,
+    0 4px 0 #efefef,
+    -20px 30px 10px rgba(0,0,0,.5) ;
+    animation: float 4.5s linear infinite;
+    transform: skewX(20deg);
+    background: gey;
+}
+div{
+    border: black 1px solid;
+    width: 80vmax;
+    top:45%;
+    height: 150px;
+    position: absolute;
+    background-color: white;
+    z-index: -1;
+    transform: skewX(20deg);
+    animation: float 5s linear infinite;
+    box-shadow:-10px 20px 50px white;
+
+}
+
+@keyframes float {
+    50% {transform:skewX(20deg) rotate3d(1, .1, .1, 30deg) ;}
+    100% {transform: skewX(20deg);}
+}
