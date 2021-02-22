@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    perspective: 200px;
+    background: rgb(10, 10, 39);
+}
+
+div {
+    background: rgb(24, 24, 114);
+    width: 10vmax;
+    height: 10vmax;
+    animation: rotate 2s linear infinite;
+    border-radius: 12px;
+}
+
+@keyframes rotate {
+    0% { transform: rotateX(0deg) rotateY(0deg);}
+
+	50% { transform: rotateX(0deg) rotateY(180deg); }
+
+	100% { transform: rotateX(180deg) rotateY(180deg); }
+}
