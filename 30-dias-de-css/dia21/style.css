@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    background: rgb(20, 20, 20);
+}
+
+main {
+    position: absolute;
+    width: 51vw;
+    height: 30vh;
+}
+
+main::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 5%;
+    background-image: repeating-linear-gradient(white, black);
+    bottom: 0;
+    border-radius: 5px;
+    left:0
+}
+
+span {
+    position: absolute;
+    background-image: radial-gradient(white, black);
+    width: 5vw;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 5vh;
+    bottom: 5%;
+    animation: bounce 1.5s infinite linear;
+    font-family: 'Reggae One', cursive;}
+
+
+span:nth-child(1) {
+    left: 5vw;
+    animation-delay: 0s;
+}
+span:nth-child(2) {
+    left: 11vw;
+    animation-delay: .9s;
+}
+span:nth-child(3) {
+    left: 17vw;
+    animation-delay: .6s;
+}
+span:nth-child(4) {
+    left: 23vw;
+    animation-delay: 1.2s;
+}
+span:nth-child(5) {
+    left: 29vw;
+    animation-delay: .3s;
+}
+span:nth-child(6) {
+    left: 35vw;
+    animation-delay: .7s;
+}
+span:nth-child(7) {
+    left: 41vw;
+    animation-delay: 1.4s;
+}
+
+@keyframes bounce {
+    50%{ transform: translateY(-20vh);}
+    100%{ transform: translateY(0)}
+}
