@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: red;
+    animation: color-changing 10s ease-out infinite;
+}
+
+h1 {
+    font-size: 100px;
+    animation: font-changing 10s ease-in infinite;
+    text-shadow: 5px 5px 10px #272727;
+    
+}
+
+@keyframes color-changing {
+    0% { background-color: #272727; }
+
+	20% { background-color: blue }
+
+	40% { background-color: tomato }
+
+	60% { background-color: lightblue }
+
+	80% { background-color: darkgreen }
+
+	100% { background-color: #272727;}
+}
+
+@keyframes font-changing {
+    0% { 
+        color: #272727;
+        text-shadow: 5px 5px 10px #272727; 
+   }
+
+	20% {
+         color: blue;
+         text-shadow: 5px 5px 10px blue; 
+        }
+
+	40% { color: tomato;
+        text-shadow: 5px 5px 10px tomato; 
+ }
+
+	60% { color: lightblue;
+        text-shadow: 5px 5px 10px lightblue; 
+ }
+
+	80% { color: darkgreen;
+        text-shadow: 5px 5px 10px darkgreen; 
+ }
+
+	100% { color: #272727;
+        text-shadow: 5px 5px 10px #272727; 
+ }
+}
